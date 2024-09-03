@@ -146,7 +146,7 @@
 &kp LT     &kp GT   &kp SINGLE_QUOTE  &kp SEMI   &kp BACKSLASH    &kp PIPE   &kp COLON  &kp DQT       &kp LBKT  &kp RBKT
 &kp EXCL   &kp AT   &kp HASH          &kp DLLR   &kp PRCNT        &kp CARET  &kp AMPS   &kp ASTERISK  &kp LPAR  &kp RPAR
 &kp COMMA  &kp DOT  &kp PLUS          &kp MINUS  &kp TILDE        &kp GRAVE  &kp UNDER  &kp EQUAL     &kp LBRC  &kp RBRC
-                                      &to 3      &none            &sl 1      &to 0
+                                      &to 3      &none            &to 1      &to 0
             >;
 
             label = "symb";
