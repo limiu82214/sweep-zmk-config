@@ -5,7 +5,9 @@
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define MAC 0
 #define WIN 1
@@ -152,10 +154,10 @@
 
         left_layer {
             bindings = <
-&none  &none  &none  &none  &none                       &none  &none  &none  &none  &default_report
-&none  &none  &none  &none  &kp LG(LS(LC(NUMBER_4)))    &none  &none  &none  &none  &bootloader
-&none  &none  &none  &none  &kp LG(LS(NUMBER_4))        &none  &none  &none  &none  &none
-                     &none  &none                       &none  &none
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                &bt BT_CLR  &none  &none  &none  &default_report
+&out OUT_TOG  &none         &none         &none         &kp LG(LS(LC(NUMBER_4)))    &none       &none  &none  &none  &bootloader
+&none         &none         &none         &none         &kp LG(LS(NUMBER_4))        &none       &none  &none  &none  &none
+                                          &none         &none                       &none       &none
             >;
         };
     };
