@@ -62,61 +62,73 @@
         leftAlt {
             bindings = <&sk LEFT_ALT>;
             key-positions = <13 14>;
+            timeout-ms = <80>;
         };
 
         leftCmd {
             bindings = <&sk LCMD>;
             key-positions = <13 12>;
+            timeout-ms = <80>;
         };
 
         leftShift {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <12 11>;
+            timeout-ms = <80>;
         };
 
         leftCtl {
             bindings = <&sk LCTRL>;
             key-positions = <10 11>;
+            timeout-ms = <80>;
         };
 
         rightAlt {
             bindings = <&sk LEFT_ALT>;
             key-positions = <15 16>;
+            timeout-ms = <80>;
         };
 
         rightCmd {
             bindings = <&sk LCMD>;
             key-positions = <16 17>;
+            timeout-ms = <80>;
         };
 
         rightShift {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <17 18>;
+            timeout-ms = <80>;
         };
 
         rightCtl {
             bindings = <&sk LCTRL>;
             key-positions = <19 18>;
+            timeout-ms = <80>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <1 2>;
+            timeout-ms = <80>;
         };
 
         esc {
             bindings = <&kp ESC>;
             key-positions = <21 22>;
+            timeout-ms = <80>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <7 8>;
+            timeout-ms = <80>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <28 27>;
+            timeout-ms = <80>;
         };
     };
 
