@@ -85,10 +85,10 @@
 
         NAV {
             bindings = <
-&trans  &kp HOME      &kp UP    &kp PG_UP      &trans    &trans  &trans        &trans  &trans              &trans
-&trans  &kp UP_ARROW  &kp DOWN  &kp RIGHT      &trans    &trans  &kp LEFT_GUI  &none   &mt LCTRL LEFT_ALT  &mt LA(LCTRL) LSHIFT
-&trans  &kp END       &trans    &kp PAGE_DOWN  &trans    &trans  &trans        &trans  &trans              &trans
-                                &trans         &trans    &trans  &trans
+&trans  &kp HOME        &kp UP    &kp PG_UP      &trans    &trans  &trans        &trans  &trans              &trans
+&trans  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT      &trans    &trans  &kp LEFT_GUI  &none   &mt LCTRL LEFT_ALT  &mt LA(LCTRL) LSHIFT
+&trans  &kp END         &trans    &kp PAGE_DOWN  &trans    &trans  &trans        &trans  &trans              &trans
+                                  &trans         &trans    &trans  &trans
             >;
 
             label = "nav";
