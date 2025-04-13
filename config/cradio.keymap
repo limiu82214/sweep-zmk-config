@@ -139,9 +139,9 @@
         default_layer {
             bindings = <
 &kp Q         &kp W        &kp E           &kp R           &kp T            &kp Y      &kp U           &kp I               &kp O             &kp P
-&mt LSHIFT A  &kp S        &lt 1 D         &kp F           &kp G            &kp H      &kp J           &lt 2 K             &kp L             &mt LSHIFT SEMICOLON
+&mt LSHIFT A  &lt 5 S      &lt 1 D         &lt 3 F         &kp G            &kp H      &lt 4 H         &lt 2 K             &lt 6 L           &mt LSHIFT SEMICOLON
 &kp Z         &mt LCTRL X  &mt LEFT_ALT C  &mt LEFT_GUI V  &kp B            &kp N      &mt LEFT_GUI M  &mt LEFT_ALT COMMA  &mt LCTRL PERIOD  &kp SLASH
-                                           &none           &kp BACKSPACE    &kp SPACE  &kp ENTER
+                                           &none           &kp BACKSPACE    &kp SPACE  &none
             >;
         };
 
@@ -158,9 +158,9 @@
 
         NAV {
             bindings = <
-&trans    &trans        &kp PAGE_UP  &trans     &trans    &trans  &trans  &trans  &trans  &trans
-&kp LEFT  &kp UP_ARROW  &kp DOWN     &kp RIGHT  &trans    &trans  &trans  &none   &trans  &trans
-&trans    &kp HOME      &kp DOWN     &kp END    &trans    &trans  &trans  &trans  &trans  &trans
+&trans    &trans        &kp PAGE_UP  &trans     &trans    &trans  &trans        &trans  &trans              &trans
+&kp LEFT  &kp UP_ARROW  &kp DOWN     &kp RIGHT  &trans    &trans  &kp LEFT_GUI  &none   &mt LCTRL LEFT_ALT  &mt LA(LCTRL) LSHIFT
+&trans    &kp HOME      &kp DOWN     &kp END    &trans    &trans  &trans        &trans  &trans              &trans
                                      &trans     &trans    &trans  &trans
             >;
 
@@ -205,9 +205,9 @@
 
         Always {
             bindings = <
-&trans  &trans         &kp LS(COLON)  &kp ESC       &trans     &sl 9  &sl 8   &trans               &trans            &kp BSPC
-&trans  &kp LS(PRCNT)  &kp FSLH       &kp ENTER     &trans     &to 1  &trans  &trans               &trans            &trans
-&trans  &trans         &trans         &kp LS(EXCL)  &trans     &to 0  &trans  &mt RIGHT_ALT COMMA  &mt RCTRL PERIOD  &trans
+&trans  &trans         &kp LS(COLON)  &kp ESC       &trans     &sl 9  &sl 8         &trans               &trans            &kp BSPC
+&trans  &kp LS(PRCNT)  &kp FSLH       &kp ENTER     &trans     &to 1  &kp LEFT_GUI  &trans               &trans            &trans
+&trans  &trans         &trans         &kp LS(EXCL)  &trans     &to 0  &trans        &mt RIGHT_ALT COMMA  &mt RCTRL PERIOD  &trans
                                       &trans        &kp TAB    &none  &trans
             >;
         };
