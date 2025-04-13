@@ -27,6 +27,20 @@
 
 &sk { quick-release; };
 
+&lt {
+    retro-tap;
+    flavor = "tap-preferred";
+    tapping-term-ms = <220>;
+    hold-trigger-on-release;
+};
+
+&mt {
+    tapping-term-ms = <220>;
+    flavor = "tap-preferred";
+    hold-trigger-on-release;
+    retro-tap;
+};
+
 / {
     chosen { zmk,charmap = &charmap_us; };
 
