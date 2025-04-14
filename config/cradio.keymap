@@ -132,33 +132,22 @@
 
         Always {
             bindings = <
-&trans  &trans         &kp LS(COLON)  &kp ESC       &trans     &sl 9  &trans        &trans               &trans            &kp BSPC
+&trans  &trans         &kp LS(COLON)  &kp ESC       &trans     &sl 8  &trans        &trans               &trans            &kp BSPC
 &trans  &kp LS(PRCNT)  &kp FSLH       &kp ENTER     &trans     &to 1  &kp LEFT_GUI  &trans               &trans            &trans
 &trans  &trans         &trans         &kp LS(EXCL)  &trans     &to 0  &trans        &mt RIGHT_ALT COMMA  &mt RCTRL PERIOD  &to 8
                                       &trans        &kp TAB    &none  &trans
             >;
         };
 
-        setting_layer {
+        Setting {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR  &trans  &trans  &trans  &trans
-&out OUT_TOG  &trans        &trans        &trans        &bt BT_CLR      &trans      &trans  &trans  &trans  &to 0
-&none         &trans        &trans        &trans        &to 0           &to 0       &trans  &trans  &trans  &trans
-                                          &trans        &trans          &to 0       &trans
+&bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4     &bt BT_CLR  &out OUT_TOG  &none  &none  &default_report
+&bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &none       &out OUT_BLE  &none  &none  &none
+&bt BT_PRV     &bt BT_NXT     &none          &to 0          &kp S            &kp S       &out OUT_USB  &none  &none  &none
+                                             &none          &none            &to 0       &none
             >;
 
-            label = "setting";
-        };
-
-        magic_layer {
-            bindings = <
-&none  &none  &none  &none  &none                       &none  &none  &none  &none  &default_report
-&none  &none  &none  &none  &kp LG(LS(LC(NUMBER_4)))    &none  &none  &none  &none  &to 0
-&none  &none  &none  &none  &kp LG(LS(NUMBER_4))        &to 0  &none  &none  &none  &none
-                     &none  &none                       &none  &none
-            >;
-
-            label = "magic";
+            label = "Setting";
         };
     };
 };
